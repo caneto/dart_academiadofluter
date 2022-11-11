@@ -1,0 +1,16 @@
+name: dart_fundamentos
+description: Projeto referente ao curso dart fundamentos da academia do flutter.
+version: 1.0.0
+homepage: https://academiadoflutter.com.br
+
+environment:
+  sdk: '>=2.13.0 <3.0.0'
+
+dependencies:
+  http: ^0.13.3
+  mysql1: ^0.19.2
+
+dev_dependencies:
+  lints: ^1.0.0
+  test: ^1.16.0
+
