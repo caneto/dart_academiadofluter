@@ -1,0 +1,63 @@
+{
+    "alunos":[
+        {
+            "id":"1",
+            "Nome":"Carlos Alberto",
+            "idade":57,
+            "isAluno":true,
+            "nomeCurso": ["Academia do Fluter", "Imerção Getx"],
+            "cursos": [
+                {
+                    "id":1,
+                    "nome": "Academia do Flutter",
+                    "isAluno": true
+                },
+                {
+                    "id": 2,
+                    "nome":"Imerção Getx",
+                    "isAluno":false
+                }
+            ],            
+            "endereco": {
+                "rua": "Rua X",
+                "numero": 200,
+                "CEP": "20740260",
+                "cidade": {
+                    "id": 1,
+                    "nome": "Rio de Janeiro"
+                },
+                "telefone": {
+                    "ddd": 21,
+                    "telefone": "9999-99999"
+                }
+            }
+        },
+        {
+            "id":"2",
+            "Nome":"Cristiane",
+            "idade":54,
+            "isAluno":false,
+            "nomeCurso": ["Imerção Getx"],
+            "cursos": [
+                {
+                    "id": 2,
+                    "nome":"Imerção Getx",
+                    "isAluno":false
+                }
+            ],            
+            "endereco": {
+                "rua": "Rua X",
+                "numero": 200,
+                "CEP": "20740260",
+                "cidade": {
+                    "id": 1,
+                    "nome": "Rio de Janeiro"
+                },
+                "telefone": {
+                    "ddd": 21,
+                    "telefone": "9999-99999"
+                }
+            }
+        }
+    ]
+}
