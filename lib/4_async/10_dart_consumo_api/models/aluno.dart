@@ -39,7 +39,8 @@ class Aluno {
       id: (map["id"] ?? '') as String,
       nome: (map["nome"] ?? '') as String,
       idade: (map["idade"] ?? 0) as int,
-      nomeCursos: List<String>.from(((map['nomeCursos'] ?? const <String>[]) as List<String>),),
+      //nomeCursos: List<String>.from(((map['nomeCursos'] ?? const <String>[]) as List<String>),),
+      nomeCursos: map['nomeCursos'].cast<String>(),
       endereco: Endereco.fromMap((map["endereco"]?? Map<String,dynamic>.from({})) as Map<String,dynamic>),
       cursos: List<Curso>.from(((map['cursos'] ?? const <Curso>[]) as List).map<Curso>((x) {return Curso.fromMap((x?? Map<String,dynamic>.from({})) as Map<String,dynamic>);}),),
     );
