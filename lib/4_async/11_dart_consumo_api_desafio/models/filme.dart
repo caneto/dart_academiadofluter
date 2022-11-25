@@ -36,19 +36,19 @@ class Filme {
   Map<String, dynamic> toMap() {
     return <String, dynamic>{
       'adult': adult,
-      'backdropPath': backdropPath,
-      'genreIds': genreIds,
+      'backdrop_path': backdropPath,
+      'genre_ids': genreIds,
       'id': id,
-      'originalLanguage': originalLanguage,
-      'originalTitle': originalTitle,
+      'original_language': originalLanguage,
+      'original_title': originalTitle,
       'overview': overview,
       'popularity': popularity,
-      'posterPath': posterPath,
-      'releaseDate': releaseDate,
+      'poster_path': posterPath,
+      'release_date': releaseDate,
       'title': title,
       'video': video,
-      'voteAverange': voteAverange,
-      'voteCount': voteCount,
+      'vote_averange': voteAverange,
+      'vote_count': voteCount,
     };
   }
 
