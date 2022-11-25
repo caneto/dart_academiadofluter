@@ -16,7 +16,6 @@ class AlunosController {
     alunos.forEach(print);
   }
   
-
   Future<void> findById(String id) async {
     final aluno = await _alunosRepository.findById(id);
 
@@ -54,5 +53,6 @@ class AlunosController {
       ]);
 
     await _alunosRepository.insert(aluno);
+
   }
 }
