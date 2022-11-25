@@ -13,8 +13,9 @@ class Filme {
   String releaseDate;
   String title;
   bool video;
-  double voteAverange;
+  double voteAverage;
   int voteCount;
+  double voteAverange;
 
   Filme({
     required this.adult,
@@ -29,8 +30,9 @@ class Filme {
     required this.releaseDate,
     required this.title,
     required this.video,
-    required this.voteAverange,
+    required this.voteAverage,
     required this.voteCount,
+    required this.voteAverange,
   });
 
   Map<String, dynamic> toMap() {
@@ -47,8 +49,9 @@ class Filme {
       'release_date': releaseDate,
       'title': title,
       'video': video,
-      'vote_averange': voteAverange,
+      'vote_average': voteAverage,
       'vote_count': voteCount,
+      'vote_averange': voteAverange,
     };
   }
 
@@ -67,8 +70,9 @@ class Filme {
       releaseDate: (map["release_date"] ?? '') as String,
       title: (map["title"] ?? '') as String,
       video: (map["video"] ?? false) as bool,
-      voteAverange: (map["vote_averange"] ?? 0.0) as double,
+      voteAverage: (map["vote_average"] ?? 0.0) as double,
       voteCount: (map["vote_count"] ?? 0) as int,
+      voteAverange: (map["vote_averange"] ?? 0.0) as double,
     );
   }
 
@@ -78,6 +82,6 @@ class Filme {
 
   @override
   String toString() {
-    return 'Filme(adult: $adult, backdropPath: $backdropPath, genreIds: $genreIds, id: $id, originalLanguage: $originalLanguage, originalTitle: $originalTitle, overview: $overview, popularity: $popularity, posterPath: $posterPath, releaseDate: $releaseDate, title: $title, video: $video, voteAverange: $voteAverange, voteCount: $voteCount)';
+    return 'Filme(adult: $adult, backdropPath: $backdropPath, genreIds: $genreIds, id: $id, originalLanguage: $originalLanguage, originalTitle: $originalTitle, overview: $overview, popularity: $popularity, posterPath: $posterPath, releaseDate: $releaseDate, title: $title, video: $video, voteAverage: $voteAverage, voteCount: $voteCount, voteAverange: $voteAverange)';
   }
 }

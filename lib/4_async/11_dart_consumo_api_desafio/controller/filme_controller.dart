@@ -18,4 +18,17 @@ class FilmeController {
     return filme;
   }
 
+  Future<void> update(Filme filmeUpdate) async {
+    //final filme = await _filmeRepository.findById(id);
+
+    await _filmeRepository.update(filmeUpdate);
+
+  }
+
+  Future<void> insert(Filme filmeInsert) async {
+    
+    await _filmeRepository.insert(filmeInsert);
+
+  }
+
 }
