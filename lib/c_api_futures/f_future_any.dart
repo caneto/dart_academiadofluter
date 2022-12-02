@@ -8,20 +8,9 @@ void main() {
   var f5 = Future.delayed(
       Duration(seconds: 1), () => Future.error('Erro na execução'));
 
-  print(DateTime.now().toIso8601String());
-  Future.wait([f1, f2, f3, f4, f5], eagerError: true, cleanUp: (successValue) 
-    {
-      print('completou $successValue');
-    },
-  ).then(
-    (arrayValues) {
-      print(DateTime.now().toIso8601String());
-      print(arrayValues);
-    },
-  ).catchError((error) {
-    print(DateTime.now().toIso8601String());
-    print(error);
-  });
+  Future.any([f1, f2, f3, f4, f5])
+    .then(print)
+    .catchError(print);
 
   print('Fim Main');
 }
