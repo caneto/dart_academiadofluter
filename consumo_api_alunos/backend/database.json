@@ -1,0 +1,68 @@
+{
+    "users": [
+        {
+            "id": 0,
+            "name": "Rodrigo Rahman",
+            "email": "rodrigorahman@academiadoflutter.com.br",
+            "password": "123"
+        },
+        {
+            "id": 1,
+            "name": "Guilherme",
+            "email": "guilherme@gmail.com",
+            "password": "1234"
+        }
+    ],
+    "products": [
+        {
+            "id": 0,
+            "title": "Academia do flutter"
+        },
+        {
+            "id": 1,
+            "title": "Jornada Dart"
+        },
+        {
+            "id": 2,
+            "title": "Jornada GetX"
+        }
+    ],
+    "alunos": [
+        {
+            "id":0,
+            "nome":"Carlos Alberto",
+            "idade": 57,
+            "nomeCursos":[
+                "Academia Fluter",
+                "Jornada GetX",
+                "Jornada Clean Code"
+            ],
+            "cursos":[
+                {
+                    "id": 1,
+                    "nome": "Academia do Flutter",
+                    "isAluno": true
+
+                },
+                {
+                    "id": 1,
+                    "nome": "Jornada Getx",
+                    "isAluno": true
+
+                },
+                {
+                    "id": 1,
+                    "nome": "Jornada Clean Code",
+                    "isAluno": true
+
+                },
+                {
+                    "id": 1,
+                    "nome": "Jornada Arquitetura",
+                    "isAluno": false
+
+                }
+            ]
+        }
+    ]
+}
