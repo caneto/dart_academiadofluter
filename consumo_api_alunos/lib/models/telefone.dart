@@ -36,4 +36,7 @@ class Telefone {
 
   // Passo 1 
   factory Telefone.fromJson(String json) => Telefone.fromMap(jsonDecode(json));
+
+  @override
+  String toString() => 'Telefone(ddd: $ddd, telefone: $telefone)';
 }
