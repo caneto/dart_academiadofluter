@@ -45,24 +45,84 @@
 
                 },
                 {
-                    "id": 1,
+                    "id": 2,
                     "nome": "Jornada Getx",
                     "isAluno": true
 
                 },
                 {
-                    "id": 1,
+                    "id": 3,
                     "nome": "Jornada Clean Code",
                     "isAluno": true
 
                 },
                 {
-                    "id": 1,
+                    "id": 4,
                     "nome": "Jornada Arquitetura",
                     "isAluno": false
 
                 }
-            ]
+            ],
+            "endereco": {
+                "rua": "Rua Assis Carneiro",
+                "numero": 80,
+                "CEP": "20740260",
+                "cidade": {
+                    "id":1,
+                    "nome0": "Rio de Janeiro"
+                },
+                "telefone": {
+                    "ddd": 11,
+                    "telefone":"999988888"
+                }
+            }
+        },
+        {
+            "id":1,
+            "nome":"Cristiane Cunha",
+            "idade": 54,
+            "nomeCursos":[
+                "Academia Fluter",
+             ],
+            "cursos":[
+                {
+                    "id": 1,
+                    "nome": "Academia do Flutter",
+                    "isAluno": true
+
+                },
+                {
+                    "id": 2,
+                    "nome": "Jornada Getx",
+                    "isAluno": false
+
+                },
+                {
+                    "id": 3,
+                    "nome": "Jornada Clean Code",
+                    "isAluno": false
+
+                },
+                {
+                    "id": 4,
+                    "nome": "Jornada Arquitetura",
+                    "isAluno": false
+
+                }
+            ],
+            "endereco": {
+                "rua": "Rua Assis Carneiro",
+                "numero": 80,
+                "CEP": "20740260",
+                "cidade": {
+                    "id":1,
+                    "nome0": "Rio de Janeiro"
+                },
+                "telefone": {
+                    "ddd": 11,
+                    "telefone":"999977777"
+                }
+            }
         }
     ]
 }
