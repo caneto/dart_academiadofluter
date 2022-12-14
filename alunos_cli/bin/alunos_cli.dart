@@ -1,3 +1,4 @@
+import 'package:alunos_cli/src/commands/students/studants_command.dart';
 import 'package:args/args.dart';
 import 'package:args/command_runner.dart';
 import 'package:test/expect.dart';
@@ -15,27 +16,7 @@ void main(List<String> arguments) {
   //print('${argResult['template']}');
 
   CommandRunner('ALUNOS CLI', 'ALUNOS CLI')
-    ..addCommand(ExemploCommand())
+    ..addCommand(StudantsCommand())
     ..run(arguments);
 }
 
-class ExemploCommand extends Command {
-
-  @override 
-  String get description => 'Exemplo de Comando';
-
-
-  @override
-  String get name => 'exemplo';
-
-  ExemploCommand() {
-    argParser.addOption('template', abbr: 't', help: 'Templete de Criação do projeto');
-  }
-
-  @override
-  void run() {
-    print(argResults?['template']);
-    print('Executar qualquer coisas !!!!!');
-  }  
-  
-}
