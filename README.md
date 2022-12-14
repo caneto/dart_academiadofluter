@@ -14,6 +14,7 @@
 
 <b>Desvendando o async await</b> (Anatomia de uma função async, Modificador await, Tratamento de erros, Loops com processo async, Registrando um tempo para execução de um Future)
 
+<b>Lab Aluno ADF (Cli)</b> (Iniciando, Modelando dados e repositories, IImplementando comandos, Convertendo repositories para o DIO)
 
 
 ### Criar o dartion
