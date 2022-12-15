@@ -5,12 +5,12 @@ import 'dart:convert';
 class Course {
   final int id;
   final String name;
-  final bool isStudent;
+  bool isStudent;
   
   Course({
     required this.id,
     required this.name,
-    required this.isStudent,
+    this.isStudent = false,
   });
 
   Map<String, dynamic> toMap() {
