@@ -7,7 +7,7 @@ class DeleteCommand extends Command {
   StudentRepository studentRepository;
   
   @override
-  String get description => "Delete Student";
+  String get description => "Delete Student by id";
 
   @override
   String get name => "delete";
@@ -18,25 +18,31 @@ class DeleteCommand extends Command {
 
    @override
   Future<void> run() async {
-    print('Aguarde ...');
-    final id = argResults?['id'];
+    final id = int.tryParse(argResults?['id']);
 
     if(id == null) {
       print('Por favor informe o id do aluno com o comando --id=0 ou -i 0');
       return;
     }
 
-    print('Confirme a deleção do Aluno $id? (S ou N)');
+    print('Aguarde.....');
+    final student = await studentRepository.findById(id);
 
-    final showDelete = stdin.readLineSync();
-    if(showDelete?.toLowerCase() == 'n') {
-      return;
+    print('Confirme a exclusão do Aluno ${student.name}? (S ou N)');
+
+    final confirmDelete = stdin.readLineSync();
+    if(confirmDelete?.toLowerCase() == 's') {
+       await studentRepository.deleteById(id);
+       print('............................................');
+       print('Aluno deletado com sucesso');
+       print('............................................');
+    } else {
+       print('............................................');
+       print('Operação Cancelada!!!!');
+       print('............................................');
+       return;
     }
 
-    await studentRepository.deleteById(int.parse(id));
-
-    print('............................................');
-    print('Aluno deletado com sucesso');
   }
   
 }

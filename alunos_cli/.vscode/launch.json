@@ -1,0 +1,41 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Student Find By Id",
+            "request": "launch",
+            "type": "dart",
+            "program": "${workspaceFolder}/bin/alunos_cli.dart",
+            "args": [
+                "students",
+                "byId",
+                "-i",
+                "${input:id_student}"
+            ]
+        },
+        {
+            "name": "Student insert",
+            "request": "launch",
+            "type": "dart",
+            "program": "${workspaceFolder}/bin/alunos_cli.dart",
+            "args": [
+                "students",
+                "insert",
+                "-f",
+                "${input:file_path}"
+            ]
+        }
+    ],
+    "inputs": [
+        {
+            "id": "file_path",
+            "description": "Informe o Path do arquivo",
+            "default": "",
+            "type": "promptString"
+        }
+        
+    ]
+}
