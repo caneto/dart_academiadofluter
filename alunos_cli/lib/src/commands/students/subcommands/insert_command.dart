@@ -6,12 +6,14 @@ import '../../../models/address.dart';
 import '../../../models/city.dart';
 import '../../../models/phone.dart';
 import '../../../models/student.dart';
-import '../../../respositories/product_repository.dart';
-import '../../../respositories/student_repository.dart';
+import '../../../respositories/product_dio_repository.dart';
+//import '../../../respositories/product_repository.dart';
+import '../../../respositories/student_dio_repository.dart';
+//import '../../../respositories/student_repository.dart';
 
 class InsertCommand extends Command {
-  final StudentRepository studentRepository;
-  final ProductRepository productRepository;
+  final StudentDioRepository studentRepository;
+  final ProductDioRepository productRepository;
 
   @override
   String get description => 'Insert Student';
@@ -20,7 +22,7 @@ class InsertCommand extends Command {
   String get name => 'insert';
 
   InsertCommand(this.studentRepository)
-      : productRepository = ProductRepository() {
+      : productRepository = ProductDioRepository() {
     argParser.addOption('file', help: 'Path of the csv file', abbr: 'f');
   }
 
