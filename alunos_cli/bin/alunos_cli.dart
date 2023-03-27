@@ -1,7 +1,5 @@
 import 'package:alunos_cli/src/commands/students/studants_command.dart';
-import 'package:args/args.dart';
 import 'package:args/command_runner.dart';
-import 'package:test/expect.dart';
 
 void main(List<String> arguments) {
   //final argParser = ArgParser();
